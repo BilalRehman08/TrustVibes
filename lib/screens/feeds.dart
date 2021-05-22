@@ -128,6 +128,19 @@ class _FeedState extends State<Feed> {
                 ),
               ),
             ),
+            SizedBox(
+              height: MediaQuery.of(context).size.height * 0.06,
+            ),
+            TextButton(
+              onPressed: () {},
+              child: Text(
+                "View all",
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 17,
+                ),
+              ),
+            ),
           ]),
         ),
       ),
