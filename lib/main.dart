@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:trustvibes/screens/bottomNavigation.dart';
+import 'package:trustvibes/screens/bottomnav2.dart';
 
 void main() {
   runApp(MyApp());
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: BottomNavigation(),
+      home: BottomNav2(),
     );
   }
 }
