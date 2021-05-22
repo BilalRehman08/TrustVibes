@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../postdetail.dart';
+import '../widgets/postdetail.dart';
 
 class Feed extends StatefulWidget {
   @override

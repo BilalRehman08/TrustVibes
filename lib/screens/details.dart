@@ -182,7 +182,52 @@ class _DetailsState extends State<Details> {
                   ),
                 ),
               )
-            ])
+            ]),
+            SizedBox(
+              height: MediaQuery.of(context).size.height * 0.03,
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 15.0, right: 15),
+              child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Row(
+                      children: [
+                        TextButton(
+                          onPressed: () {},
+                          child: Text(
+                            "Feed",
+                            style: TextStyle(
+                                color: Colors.black,
+                                fontSize: 22,
+                                fontWeight: FontWeight.bold),
+                          ),
+                        ),
+                        TextButton(
+                          onPressed: () {},
+                          child: Text(
+                            "Info",
+                            style: TextStyle(
+                                color: Colors.black38,
+                                fontSize: 22,
+                                fontWeight: FontWeight.bold),
+                          ),
+                        )
+                      ],
+                    ),
+                    IconButton(
+                      icon: Icon(
+                        Icons.crop_square_outlined,
+                        size: 32,
+                        color: Colors.black,
+                      ),
+                      onPressed: () {
+                        // Navigator.push(context,
+                        //     MaterialPageRoute(builder: (context) => MyApp()));
+                      },
+                    ),
+                  ]),
+            ),
           ]),
         ]),
       )),
