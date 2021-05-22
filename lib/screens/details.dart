@@ -88,9 +88,13 @@ class _DetailsState extends State<Details> {
                           ),
                         ],
                       ),
-                      CircleAvatar(
-                        radius: 65,
-                        backgroundColor: Colors.blueGrey,
+                      Container(
+                        child: CircleAvatar(
+                          radius: 65.0,
+                          backgroundImage: NetworkImage(
+                              'https://lh3.googleusercontent.com/proxy/3U1ABsqYhhxW-Bf-Js1m0gavwrGXOFasNBIK3imFPGdds2DDn53QtkDBFP3ozFJ0MsksPcZ4swFKWIQ727DQs6dpd2xQ_cOvbP7XCQZznSwdiYUxYiTo62GTIo1y3W7dQkeLd42W_24zdhKXDQ'),
+                          backgroundColor: Colors.transparent,
+                        ),
                       ),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.end,
@@ -119,9 +123,68 @@ class _DetailsState extends State<Details> {
                       ),
                     ],
                   ),
-                )
+                ),
               ]),
-            )
+            ),
+            SizedBox(
+              height: MediaQuery.of(context).size.height * 0.03,
+            ),
+            Text(
+              "Diniharistd",
+              style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 22,
+                  fontWeight: FontWeight.bold),
+            ),
+            SizedBox(
+              height: MediaQuery.of(context).size.height * 0.013,
+            ),
+            Text(
+              "@portugal",
+              style: TextStyle(
+                color: Colors.purple,
+                fontSize: 16,
+              ),
+            ),
+            SizedBox(
+              height: MediaQuery.of(context).size.height * 0.008,
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 60.0, right: 60),
+              child: Text(
+                "Diniharistd is a upcoming sci-fi and fantasy author, artist, photojournalist and musician.",
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 15,
+                ),
+              ),
+            ),
+            SizedBox(
+              height: MediaQuery.of(context).size.height * 0.025,
+            ),
+            Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+              TextButton(
+                onPressed: () {},
+                child: Text(
+                  "Follow",
+                  style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold),
+                ),
+              ),
+              TextButton(
+                onPressed: () {},
+                child: Text(
+                  "Contact",
+                  style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 22,
+                      fontWeight: FontWeight.bold),
+                ),
+              )
+            ])
           ]),
         ]),
       )),
