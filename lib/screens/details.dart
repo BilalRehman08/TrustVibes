@@ -91,9 +91,7 @@ class _DetailsState extends State<Details> {
                       Container(
                         child: CircleAvatar(
                           radius: 65.0,
-                          backgroundImage: NetworkImage(
-                              'https://lh3.googleusercontent.com/proxy/3U1ABsqYhhxW-Bf-Js1m0gavwrGXOFasNBIK3imFPGdds2DDn53QtkDBFP3ozFJ0MsksPcZ4swFKWIQ727DQs6dpd2xQ_cOvbP7XCQZznSwdiYUxYiTo62GTIo1y3W7dQkeLd42W_24zdhKXDQ'),
-                          backgroundColor: Colors.transparent,
+                          backgroundColor: Colors.purple,
                         ),
                       ),
                       Column(

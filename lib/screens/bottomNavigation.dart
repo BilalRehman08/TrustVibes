@@ -20,7 +20,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
     Screen5(),
   ];
 
-  Widget CurrentScreen = Details();
+  Widget currentScreen = Details();
 
   final PageStorageBucket bucket = PageStorageBucket();
 
@@ -28,13 +28,13 @@ class _BottomNavigationState extends State<BottomNavigation> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: PageStorage(bucket: bucket, child: CurrentScreen),
+      body: PageStorage(bucket: bucket, child: currentScreen),
       floatingActionButton: Padding(
         padding: const EdgeInsets.only(left: 5, bottom: 0.0, right: 5),
         child: FloatingActionButton(
           onPressed: () {
             setState(() {
-              CurrentScreen = Screen3();
+              currentScreen = Screen3();
               currentTab = 8;
             });
           },
@@ -64,7 +64,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
                         minWidth: 50,
                         onPressed: () {
                           setState(() {
-                            CurrentScreen = Details();
+                            currentScreen = Details();
                             currentTab = 0;
                           });
                         },
@@ -80,7 +80,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
                         minWidth: 60,
                         onPressed: () {
                           setState(() {
-                            CurrentScreen = Feed();
+                            currentScreen = Feed();
                             currentTab = 1;
                           });
                         },
@@ -96,7 +96,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
                         minWidth: 60,
                         onPressed: () {
                           setState(() {
-                            CurrentScreen = Screen4();
+                            currentScreen = Screen4();
                             currentTab = 2;
                           });
                         },
@@ -112,7 +112,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
                         minWidth: 60,
                         onPressed: () {
                           setState(() {
-                            CurrentScreen = Screen5();
+                            currentScreen = Screen5();
                             currentTab = 4;
                           });
                         },
