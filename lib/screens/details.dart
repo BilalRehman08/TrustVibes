@@ -24,7 +24,7 @@ class _DetailsState extends State<Details> {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(left: 15, right: 15, top: 50),
+            padding: EdgeInsets.only(left: 15, right: 15, top: 45),
             child: Column(children: <Widget>[
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
