@@ -35,7 +35,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
           onPressed: () {
             setState(() {
               currentScreen = Screen3();
-              currentTab = 8;
+              currentTab = 10;
             });
           },
           child: Icon(
@@ -113,7 +113,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
                         onPressed: () {
                           setState(() {
                             currentScreen = Screen5();
-                            currentTab = 4;
+                            currentTab = 3;
                           });
                         },
                         child: Icon(Icons.person,
