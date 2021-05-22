@@ -62,7 +62,7 @@ class _DetailsState extends State<Details> {
               child:
                   Column(mainAxisAlignment: MainAxisAlignment.end, children: [
                 Padding(
-                  padding: const EdgeInsets.only(left: 20.0, right: 20),
+                  padding: const EdgeInsets.only(left: 25.0, right: 25),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
@@ -70,7 +70,7 @@ class _DetailsState extends State<Details> {
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
                           SizedBox(
-                            height: MediaQuery.of(context).size.height * 0.115,
+                            height: MediaQuery.of(context).size.height * 0.105,
                           ),
                           Text(
                             "40",
@@ -89,14 +89,14 @@ class _DetailsState extends State<Details> {
                         ],
                       ),
                       CircleAvatar(
-                        radius: 70,
+                        radius: 65,
                         backgroundColor: Colors.blueGrey,
                       ),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
                           SizedBox(
-                            height: MediaQuery.of(context).size.height * 0.115,
+                            height: MediaQuery.of(context).size.height * 0.105,
                           ),
                           Text(
                             "21",
