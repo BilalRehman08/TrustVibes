@@ -167,9 +167,9 @@ class _DetailsState extends State<Details> {
                 child: Text(
                   "Follow",
                   style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 22,
-                      fontWeight: FontWeight.bold),
+                    color: Colors.black,
+                    fontSize: 20,
+                  ),
                 ),
               ),
               TextButton(
@@ -177,9 +177,9 @@ class _DetailsState extends State<Details> {
                 child: Text(
                   "Contact",
                   style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 22,
-                      fontWeight: FontWeight.bold),
+                    color: Colors.black,
+                    fontSize: 20,
+                  ),
                 ),
               )
             ])
