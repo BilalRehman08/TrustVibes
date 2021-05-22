@@ -14,7 +14,7 @@ class _DetailsState extends State<Details> {
           body: SingleChildScrollView(
         child: Stack(children: <Widget>[
           Container(
-            height: MediaQuery.of(context).size.height * 0.30,
+            height: MediaQuery.of(context).size.height * 0.28,
             width: MediaQuery.of(context).size.width * 1,
             decoration: BoxDecoration(
               image: DecorationImage(
@@ -54,7 +54,7 @@ class _DetailsState extends State<Details> {
               ),
             ),
             SizedBox(
-              height: MediaQuery.of(context).size.height * 0.065,
+              height: MediaQuery.of(context).size.height * 0.035,
             ),
             Container(
               height: MediaQuery.of(context).size.height * 0.20,
@@ -70,7 +70,7 @@ class _DetailsState extends State<Details> {
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
                           SizedBox(
-                            height: MediaQuery.of(context).size.height * 0.105,
+                            height: MediaQuery.of(context).size.height * 0.09,
                           ),
                           Text(
                             "40",
@@ -90,7 +90,7 @@ class _DetailsState extends State<Details> {
                       ),
                       Container(
                         child: CircleAvatar(
-                          radius: 65.0,
+                          radius: 60.0,
                           backgroundColor: Colors.purple,
                         ),
                       ),
@@ -98,7 +98,7 @@ class _DetailsState extends State<Details> {
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
                           SizedBox(
-                            height: MediaQuery.of(context).size.height * 0.105,
+                            height: MediaQuery.of(context).size.height * 0.09,
                           ),
                           Text(
                             "21",
@@ -125,7 +125,7 @@ class _DetailsState extends State<Details> {
               ]),
             ),
             SizedBox(
-              height: MediaQuery.of(context).size.height * 0.03,
+              height: MediaQuery.of(context).size.height * 0.02,
             ),
             Text(
               "Diniharistd",
@@ -154,7 +154,7 @@ class _DetailsState extends State<Details> {
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: Colors.black,
-                  fontSize: 15,
+                  fontSize: 13,
                 ),
               ),
             ),

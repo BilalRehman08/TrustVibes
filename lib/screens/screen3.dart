@@ -201,16 +201,20 @@ class Screen3State extends State<Screen3> {
 
             // the tab bar with two items
             SizedBox(
-              height: 100,
+              height: 50,
               child: AppBar(
                 bottom: TabBar(
                   tabs: [
-                    Tab(
-                      icon: Icon(Icons.directions_bike),
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 100.0),
+                      child: Tab(
+                        icon: Icon(Icons.directions_bike),
+                      ),
                     ),
-                    Tab(
-                      icon: Icon(
-                        Icons.directions_car,
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 100.0),
+                      child: Tab(
+                        icon: Icon(Icons.directions_bike),
                       ),
                     ),
                   ],
