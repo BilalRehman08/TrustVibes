@@ -161,7 +161,7 @@ class _DetailsState extends State<Details> {
               ),
             ),
             SizedBox(
-              height: MediaQuery.of(context).size.height * 0.025,
+              height: MediaQuery.of(context).size.height * 0.02,
             ),
             Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
               TextButton(
