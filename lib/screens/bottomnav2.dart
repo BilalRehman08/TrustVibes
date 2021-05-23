@@ -56,7 +56,7 @@ class _BottomNav2State extends State<BottomNav2> {
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: BottomAppBar(
         // notchMargin: 5,
-        color: Colors.grey[300],
+        color: Colors.grey[100],
 
         child: Padding(
           padding: const EdgeInsets.only(left: 8.0, right: 8.0),
