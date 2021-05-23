@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:trustvibes/screens/feeds.dart';
+import 'package:trustvibes/screens/Screen2.dart';
 import 'package:trustvibes/screens/screen3.dart';
 import 'package:trustvibes/screens/screen4.dart';
 import 'package:trustvibes/screens/screen5.dart';
@@ -16,7 +16,7 @@ class _BottomNav2State extends State<BottomNav2> {
   int currentTab = 0;
   final List<Widget> screen = [
     Feed2(),
-    Feed(),
+    Screen2(),
     Screen3(),
     Screen4(),
     Screen5(),
@@ -92,7 +92,7 @@ class _BottomNav2State extends State<BottomNav2> {
                         minWidth: 60,
                         onPressed: () {
                           setState(() {
-                            currentScreen = Feed();
+                            currentScreen = Screen2();
                             currentTab = 1;
                           });
                         },
