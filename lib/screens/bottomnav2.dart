@@ -58,110 +58,99 @@ class _BottomNav2State extends State<BottomNav2> {
           child: Container(
               height: 60,
               child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(left: 5.0),
-                      child: MaterialButton(
-                        minWidth: 50,
-                        onPressed: () {
-                          setState(() {
-                            currentScreen = Feed2();
-                            currentTab = 0;
-                          });
-                        },
-                        child: Column(
-                          children: [
-                            SizedBox(height: 10),
-                            Icon(Icons.feed_rounded,
-                                size: 25,
-                                color: currentTab == 0
-                                    ? Colors.purple
-                                    : Colors.grey[800]),
-                            Text(
-                              'Feed',
-                              style: TextStyle(fontSize: 12),
-                            )
-                          ],
-                        ),
+                    MaterialButton(
+                      minWidth: 50,
+                      onPressed: () {
+                        setState(() {
+                          currentScreen = Feed2();
+                          currentTab = 0;
+                        });
+                      },
+                      child: Column(
+                        children: [
+                          SizedBox(height: 10),
+                          Icon(Icons.feed_rounded,
+                              size: 25,
+                              color: currentTab == 0
+                                  ? Colors.purple
+                                  : Colors.grey[800]),
+                          Text(
+                            'Feed',
+                            style: TextStyle(fontSize: 12),
+                          )
+                        ],
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 30.0),
-                      child: MaterialButton(
-                        minWidth: 60,
-                        onPressed: () {
-                          setState(() {
-                            currentScreen = Screen2();
-                            currentTab = 1;
-                          });
-                        },
-                        child: Column(
-                          children: [
-                            SizedBox(height: 10),
-                            Icon(Icons.circle_outlined,
-                                size: 25,
-                                color: currentTab == 1
-                                    ? Colors.purple
-                                    : Colors.grey[800]),
-                            Text(
-                              'Collection',
-                              style: TextStyle(fontSize: 12),
-                            )
-                          ],
-                        ),
+                    MaterialButton(
+                      minWidth: 60,
+                      onPressed: () {
+                        setState(() {
+                          currentScreen = Screen2();
+                          currentTab = 1;
+                        });
+                      },
+                      child: Column(
+                        children: [
+                          SizedBox(height: 10),
+                          Icon(Icons.circle_outlined,
+                              size: 25,
+                              color: currentTab == 1
+                                  ? Colors.purple
+                                  : Colors.grey[800]),
+                          Text(
+                            'Collection',
+                            style: TextStyle(fontSize: 12),
+                          )
+                        ],
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 30.0),
-                      child: MaterialButton(
-                        minWidth: 60,
-                        onPressed: () {
-                          setState(() {
-                            currentScreen = Screen4();
-                            currentTab = 2;
-                          });
-                        },
-                        child: Column(
-                          children: [
-                            SizedBox(height: 10),
-                            Icon(Icons.design_services,
-                                size: 25,
-                                color: currentTab == 2
-                                    ? Colors.purple
-                                    : Colors.grey[800]),
-                            Text(
-                              'Fan Club',
-                              style: TextStyle(fontSize: 12),
-                            )
-                          ],
-                        ),
+                    SizedBox(width: 20),
+                    MaterialButton(
+                      minWidth: 60,
+                      onPressed: () {
+                        setState(() {
+                          currentScreen = Screen4();
+                          currentTab = 2;
+                        });
+                      },
+                      child: Column(
+                        children: [
+                          SizedBox(height: 10),
+                          Icon(Icons.design_services,
+                              size: 25,
+                              color: currentTab == 2
+                                  ? Colors.purple
+                                  : Colors.grey[800]),
+                          Text(
+                            'Fan Club',
+                            style: TextStyle(fontSize: 12),
+                          )
+                        ],
                       ),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 5.0),
-                      child: MaterialButton(
-                        minWidth: 60,
-                        onPressed: () {
-                          setState(() {
-                            currentScreen = Screen5();
-                            currentTab = 3;
-                          });
-                        },
-                        child: Column(
-                          children: [
-                            SizedBox(height: 10),
-                            Icon(Icons.favorite,
-                                size: 25,
-                                color: currentTab == 3
-                                    ? Colors.purple
-                                    : Colors.grey[800]),
-                            Text(
-                              'Likes',
-                              style: TextStyle(fontSize: 12),
-                            )
-                          ],
-                        ),
+                    MaterialButton(
+                      minWidth: 60,
+                      onPressed: () {
+                        setState(() {
+                          currentScreen = Screen5();
+                          currentTab = 3;
+                        });
+                      },
+                      child: Column(
+                        children: [
+                          SizedBox(height: 10),
+                          Icon(Icons.favorite,
+                              size: 25,
+                              color: currentTab == 3
+                                  ? Colors.purple
+                                  : Colors.grey[800]),
+                          Text(
+                            'Likes',
+                            style: TextStyle(fontSize: 12),
+                          )
+                        ],
                       ),
                     ),
                   ])),

@@ -56,71 +56,60 @@ class _BottomNavigationState extends State<BottomNavigation> {
           child: Container(
               height: 60,
               child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(left: 5.0),
-                      child: MaterialButton(
-                        minWidth: 50,
-                        onPressed: () {
-                          setState(() {
-                            currentScreen = Details();
-                            currentTab = 0;
-                          });
-                        },
-                        child: Icon(Icons.home,
-                            size: 32,
-                            color:
-                                currentTab == 0 ? Colors.purple : Colors.black),
-                      ),
+                    MaterialButton(
+                      minWidth: 50,
+                      onPressed: () {
+                        setState(() {
+                          currentScreen = Details();
+                          currentTab = 0;
+                        });
+                      },
+                      child: Icon(Icons.home,
+                          size: 32,
+                          color:
+                              currentTab == 0 ? Colors.purple : Colors.black),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 30.0),
-                      child: MaterialButton(
-                        minWidth: 60,
-                        onPressed: () {
-                          setState(() {
-                            currentScreen = Screen2();
-                            currentTab = 1;
-                          });
-                        },
-                        child: Icon(Icons.circle_outlined,
-                            size: 32,
-                            color:
-                                currentTab == 1 ? Colors.purple : Colors.black),
-                      ),
+                    MaterialButton(
+                      minWidth: 60,
+                      onPressed: () {
+                        setState(() {
+                          currentScreen = Screen2();
+                          currentTab = 1;
+                        });
+                      },
+                      child: Icon(Icons.circle_outlined,
+                          size: 32,
+                          color:
+                              currentTab == 1 ? Colors.purple : Colors.black),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 30.0),
-                      child: MaterialButton(
-                        minWidth: 60,
-                        onPressed: () {
-                          setState(() {
-                            currentScreen = Screen4();
-                            currentTab = 2;
-                          });
-                        },
-                        child: Icon(Icons.design_services,
-                            size: 32,
-                            color:
-                                currentTab == 2 ? Colors.purple : Colors.black),
-                      ),
+                    SizedBox(width: 20),
+                    MaterialButton(
+                      minWidth: 60,
+                      onPressed: () {
+                        setState(() {
+                          currentScreen = Screen4();
+                          currentTab = 2;
+                        });
+                      },
+                      child: Icon(Icons.design_services,
+                          size: 32,
+                          color:
+                              currentTab == 2 ? Colors.purple : Colors.black),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 5.0),
-                      child: MaterialButton(
-                        minWidth: 60,
-                        onPressed: () {
-                          setState(() {
-                            currentScreen = Screen5();
-                            currentTab = 3;
-                          });
-                        },
-                        child: Icon(Icons.person,
-                            size: 32,
-                            color:
-                                currentTab == 3 ? Colors.purple : Colors.black),
-                      ),
+                    MaterialButton(
+                      minWidth: 60,
+                      onPressed: () {
+                        setState(() {
+                          currentScreen = Screen5();
+                          currentTab = 3;
+                        });
+                      },
+                      child: Icon(Icons.person,
+                          size: 32,
+                          color:
+                              currentTab == 3 ? Colors.purple : Colors.black),
                     ),
                   ])),
         ),
