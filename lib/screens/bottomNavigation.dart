@@ -31,24 +31,32 @@ class _BottomNavigationState extends State<BottomNavigation> {
       body: PageStorage(bucket: bucket, child: currentScreen),
       floatingActionButton: Padding(
         padding: const EdgeInsets.only(left: 5, bottom: 0.0, right: 5),
-        child: FloatingActionButton(
-          onPressed: () {
+        child: GestureDetector(
+          onTap: () {
             setState(() {
               currentScreen = Screen3();
               currentTab = 10;
             });
           },
-          child: Icon(
-            Icons.add,
-            size: 32,
-            color: Colors.white,
+          child: Container(
+            height: 60,
+            width: 60,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              gradient: LinearGradient(
+                  colors: [Color(0xff6A5FE9), Color(0xff9856EB)]),
+            ),
+            child: Icon(
+              Icons.add,
+              size: 30,
+              color: Colors.white,
+            ),
           ),
-          backgroundColor: Colors.purple,
         ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: BottomAppBar(
-        // notchMargin: 5,
+        // notchMargin: 50,
         color: Colors.grey[300],
         shape: CircularNotchedRectangle(),
         child: Padding(
@@ -59,58 +67,54 @@ class _BottomNavigationState extends State<BottomNavigation> {
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: <Widget>[
                     MaterialButton(
-                      minWidth: 50,
-                      onPressed: () {
-                        setState(() {
-                          currentScreen = Details();
-                          currentTab = 0;
-                        });
-                      },
-                      child: Icon(Icons.home,
-                          size: 32,
-                          color:
-                              currentTab == 0 ? Colors.purple : Colors.black),
-                    ),
+                        minWidth: 50,
+                        onPressed: () {
+                          setState(() {
+                            currentScreen = Details();
+                            currentTab = 0;
+                          });
+                        },
+                        child: Image.asset('assets/feed.png',
+                            color: currentTab == 0
+                                ? Colors.purple
+                                : Colors.black)),
                     MaterialButton(
-                      minWidth: 60,
-                      onPressed: () {
-                        setState(() {
-                          currentScreen = Screen2();
-                          currentTab = 1;
-                        });
-                      },
-                      child: Icon(Icons.circle_outlined,
-                          size: 32,
-                          color:
-                              currentTab == 1 ? Colors.purple : Colors.black),
-                    ),
+                        minWidth: 60,
+                        onPressed: () {
+                          setState(() {
+                            currentScreen = Screen2();
+                            currentTab = 1;
+                          });
+                        },
+                        child: Image.asset('assets/Vectorcollection.png',
+                            color: currentTab == 1
+                                ? Colors.purple
+                                : Colors.black)),
                     SizedBox(width: 20),
                     MaterialButton(
-                      minWidth: 60,
-                      onPressed: () {
-                        setState(() {
-                          currentScreen = Screen4();
-                          currentTab = 2;
-                        });
-                      },
-                      child: Icon(Icons.design_services,
-                          size: 32,
-                          color:
-                              currentTab == 2 ? Colors.purple : Colors.black),
-                    ),
+                        minWidth: 60,
+                        onPressed: () {
+                          setState(() {
+                            currentScreen = Screen4();
+                            currentTab = 2;
+                          });
+                        },
+                        child: Image.asset('assets/VectorFanclub.png',
+                            color: currentTab == 2
+                                ? Colors.purple
+                                : Colors.black)),
                     MaterialButton(
-                      minWidth: 60,
-                      onPressed: () {
-                        setState(() {
-                          currentScreen = Screen5();
-                          currentTab = 3;
-                        });
-                      },
-                      child: Icon(Icons.person,
-                          size: 32,
-                          color:
-                              currentTab == 3 ? Colors.purple : Colors.black),
-                    ),
+                        minWidth: 60,
+                        onPressed: () {
+                          setState(() {
+                            currentScreen = Screen5();
+                            currentTab = 3;
+                          });
+                        },
+                        child: Image.asset('assets/userprofile.png',
+                            color: currentTab == 3
+                                ? Colors.purple
+                                : Colors.black)),
                   ])),
         ),
       ),

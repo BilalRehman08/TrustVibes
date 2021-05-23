@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:trustvibes/screens/bottomNavigation.dart';
-import 'package:trustvibes/screens/bottomnav2.dart';
 
 void main() {
   runApp(MyApp());

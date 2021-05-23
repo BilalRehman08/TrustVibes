@@ -5,7 +5,7 @@ import 'package:trustvibes/screens/screen3.dart';
 import 'package:trustvibes/screens/screen4.dart';
 import 'package:trustvibes/screens/screen5.dart';
 
-import 'feed2.dart';
+import 'feed.dart';
 
 class BottomNav2 extends StatefulWidget {
   @override
@@ -31,21 +31,26 @@ class _BottomNav2State extends State<BottomNav2> {
     return Scaffold(
       backgroundColor: Colors.white,
       body: PageStorage(bucket: bucket, child: currentScreen),
-      floatingActionButton: Padding(
-        padding: const EdgeInsets.only(left: 5, bottom: 0.0, right: 5),
-        child: FloatingActionButton(
-          onPressed: () {
-            setState(() {
-              currentScreen = Screen3();
-              currentTab = 10;
-            });
-          },
+      floatingActionButton: GestureDetector(
+        onTap: () {
+          setState(() {
+            currentScreen = Screen3();
+            currentTab = 10;
+          });
+        },
+        child: Container(
+          height: 50,
+          width: 50,
+          decoration: BoxDecoration(
+            shape: BoxShape.circle,
+            gradient:
+                LinearGradient(colors: [Color(0xff6A5FE9), Color(0xff9856EB)]),
+          ),
           child: Icon(
             Icons.add,
             size: 30,
             color: Colors.white,
           ),
-          backgroundColor: Colors.purple,
         ),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
@@ -69,19 +74,28 @@ class _BottomNav2State extends State<BottomNav2> {
                         });
                       },
                       child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-                          SizedBox(height: 10),
-                          Icon(Icons.feed_rounded,
-                              size: 25,
+                          Image.asset('assets/feed.png',
                               color: currentTab == 0
                                   ? Colors.purple
-                                  : Colors.grey[800]),
+                                  : Colors.black),
                           Text(
                             'Feed',
-                            style: TextStyle(fontSize: 12),
+                            style: TextStyle(
+                                fontSize: 12,
+                                color: currentTab == 0
+                                    ? Colors.purple
+                                    : Colors.black),
                           )
                         ],
                       ),
+                    ),
+                    VerticalDivider(
+                      thickness: 0.5,
+                      indent: 15,
+                      endIndent: 15,
+                      color: Colors.grey,
                     ),
                     MaterialButton(
                       minWidth: 60,
@@ -92,21 +106,29 @@ class _BottomNav2State extends State<BottomNav2> {
                         });
                       },
                       child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-                          SizedBox(height: 10),
-                          Icon(Icons.circle_outlined,
-                              size: 25,
+                          Image.asset('assets/Vectorcollection.png',
                               color: currentTab == 1
                                   ? Colors.purple
-                                  : Colors.grey[800]),
+                                  : Colors.black),
                           Text(
                             'Collection',
-                            style: TextStyle(fontSize: 12),
+                            style: TextStyle(
+                                fontSize: 12,
+                                color: currentTab == 1
+                                    ? Colors.purple
+                                    : Colors.black),
                           )
                         ],
                       ),
                     ),
-                    SizedBox(width: 20),
+                    VerticalDivider(
+                      thickness: 0.5,
+                      indent: 30,
+                      endIndent: 15,
+                      color: Colors.grey,
+                    ),
                     MaterialButton(
                       minWidth: 60,
                       onPressed: () {
@@ -116,19 +138,28 @@ class _BottomNav2State extends State<BottomNav2> {
                         });
                       },
                       child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-                          SizedBox(height: 10),
-                          Icon(Icons.design_services,
-                              size: 25,
+                          Image.asset('assets/VectorFanclub.png',
                               color: currentTab == 2
                                   ? Colors.purple
-                                  : Colors.grey[800]),
+                                  : Colors.black),
                           Text(
                             'Fan Club',
-                            style: TextStyle(fontSize: 12),
+                            style: TextStyle(
+                                fontSize: 12,
+                                color: currentTab == 2
+                                    ? Colors.purple
+                                    : Colors.black),
                           )
                         ],
                       ),
+                    ),
+                    VerticalDivider(
+                      thickness: 0.5,
+                      indent: 15,
+                      endIndent: 15,
+                      color: Colors.grey,
                     ),
                     MaterialButton(
                       minWidth: 60,
@@ -139,16 +170,19 @@ class _BottomNav2State extends State<BottomNav2> {
                         });
                       },
                       child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-                          SizedBox(height: 10),
-                          Icon(Icons.favorite,
-                              size: 25,
+                          Image.asset('assets/Vectorfavourite.png',
                               color: currentTab == 3
                                   ? Colors.purple
-                                  : Colors.grey[800]),
+                                  : Colors.black),
                           Text(
                             'Likes',
-                            style: TextStyle(fontSize: 12),
+                            style: TextStyle(
+                                fontSize: 12,
+                                color: currentTab == 3
+                                    ? Colors.purple
+                                    : Colors.black),
                           )
                         ],
                       ),
