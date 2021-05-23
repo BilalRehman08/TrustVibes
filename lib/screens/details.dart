@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
-import 'package:trustvibes/screens/bottomNavigation.dart';
 import 'package:trustvibes/screens/bottomnav2.dart';
 
 import 'feed.dart';
@@ -12,13 +11,12 @@ class Details extends StatefulWidget {
 
 class _DetailsState extends State<Details> {
   final List<String> images = [
-    "https://images-na.ssl-images-amazon.com/images/I/81aF3Ob-2KL._UX679_.jpg",
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgUgs8_kmuhScsx-J01d8fA1mhlCR5-1jyvMYxqCB8h3LCqcgl9Q",
-    "https://ae01.alicdn.com/kf/HTB11tA5aiAKL1JjSZFoq6ygCFXaw/Unlocked-Samsung-GALAXY-S2-I9100-Mobile-Phone-Android-Wi-Fi-GPS-8-0MP-camera-Core-4.jpg_640x640.jpg",
-    "https://media.ed.edmunds-media.com/gmc/sierra-3500hd/2018/td/2018_gmc_sierra-3500hd_f34_td_411183_1600.jpg",
-    "https://hips.hearstapps.com/amv-prod-cad-assets.s3.amazonaws.com/images/16q1/665019/2016-chevrolet-silverado-2500hd-high-country-diesel-test-review-car-and-driver-photo-665520-s-original.jpg",
-    "https://media.onthemarket.com/properties/6191869/797156548/composite.jpg",
-    "https://media.onthemarket.com/properties/6191840/797152761/composite.jpg",
+    "assets/1.png",
+    "assets/2.png",
+    "assets/3.png",
+    "assets/4.png",
+    "assets/5.png",
+    "assets/6.png",
   ];
   @override
   Widget build(BuildContext context) {
@@ -32,28 +30,18 @@ class _DetailsState extends State<Details> {
             width: MediaQuery.of(context).size.width * 1,
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage("assets/back.jpg"),
+                image: AssetImage("assets/bg.png"),
                 fit: BoxFit.cover,
               ),
             ),
           ),
           Column(children: <Widget>[
             Padding(
-              padding: EdgeInsets.only(left: 12, right: 12, top: 45),
+              padding: EdgeInsets.only(left: 15, right: 15, top: 45),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
-                  IconButton(
-                    icon: Icon(
-                      Icons.notification_add,
-                      size: 30,
-                      color: Colors.white,
-                    ),
-                    onPressed: () {
-                      // Navigator.push(context,
-                      //     MaterialPageRoute(builder: (context) => MyApp()));
-                    },
-                  ),
+                  Container(child: Image.asset("assets/notification.png")),
                   Text('Diniharistd',
                       style: TextStyle(
                         color: Colors.white,
@@ -68,7 +56,7 @@ class _DetailsState extends State<Details> {
               ),
             ),
             SizedBox(
-              height: MediaQuery.of(context).size.height * 0.035,
+              height: MediaQuery.of(context).size.height * 0.060,
             ),
             Container(
               height: MediaQuery.of(context).size.height * 0.20,
@@ -102,12 +90,7 @@ class _DetailsState extends State<Details> {
                           ),
                         ],
                       ),
-                      Container(
-                        child: CircleAvatar(
-                          radius: 60.0,
-                          backgroundColor: Colors.purple,
-                        ),
-                      ),
+                      Container(child: Image.asset("assets/dp.png")),
                       Column(
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
@@ -154,7 +137,7 @@ class _DetailsState extends State<Details> {
             Text(
               "@portugal",
               style: TextStyle(
-                color: Colors.purple,
+                color: Color(0xff965bf5),
                 fontSize: 16,
               ),
             ),
@@ -237,33 +220,28 @@ class _DetailsState extends State<Details> {
                         )
                       ],
                     ),
-                    IconButton(
-                      icon: Icon(
-                        Icons.crop_square_outlined,
-                        size: 32,
-                        color: Colors.black,
-                      ),
-                      onPressed: () {
-                        // Navigator.push(context,
-                        //     MaterialPageRoute(builder: (context) => MyApp()));
-                      },
+                    Container(
+                      child: Image.asset("assets/icon.png"),
                     ),
                   ]),
             ),
-            StaggeredGridView.countBuilder(
-              shrinkWrap: true,
-              crossAxisCount: 3,
-              itemCount: images.length,
-              physics: NeverScrollableScrollPhysics(),
-              itemBuilder: (BuildContext context, int index) => Card(
-                child: GestureDetector(
-                  onTap: () {},
-                  child: Image.network(images[index]),
+            Padding(
+              padding: const EdgeInsets.only(left: 10.0, right: 10),
+              child: StaggeredGridView.countBuilder(
+                shrinkWrap: true,
+                crossAxisCount: 3,
+                itemCount: images.length,
+                physics: NeverScrollableScrollPhysics(),
+                itemBuilder: (BuildContext context, int index) => Card(
+                  child: GestureDetector(
+                    onTap: () {},
+                    child: Image.asset(images[index]),
+                  ),
                 ),
+                staggeredTileBuilder: (int index) => new StaggeredTile.fit(1),
+                mainAxisSpacing: 1.0,
+                crossAxisSpacing: 2.0,
               ),
-              staggeredTileBuilder: (int index) => new StaggeredTile.fit(1),
-              mainAxisSpacing: 2.0,
-              crossAxisSpacing: 2.0,
             ),
           ]),
         ]),
@@ -307,7 +285,7 @@ class _DetailsState extends State<Details> {
 //                           decoration: BoxDecoration(
 //                             image: DecorationImage(
 //                               image: AssetImage("assets/back.jpg"),
-//                               fit: BoxFit.cover,
+//                               fit: BoxFit.cover,s
 //                             ),
 //                           ),
 //                         ),

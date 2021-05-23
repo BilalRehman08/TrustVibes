@@ -76,7 +76,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
                         },
                         child: Image.asset('assets/feed.png',
                             color: currentTab == 0
-                                ? Colors.purple
+                                ? Color(0xff965bf5)
                                 : Colors.black)),
                     MaterialButton(
                         minWidth: 60,
@@ -88,7 +88,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
                         },
                         child: Image.asset('assets/Vectorcollection.png',
                             color: currentTab == 1
-                                ? Colors.purple
+                                ? Color(0xff965bf5)
                                 : Colors.black)),
                     SizedBox(width: 20),
                     MaterialButton(
@@ -101,7 +101,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
                         },
                         child: Image.asset('assets/VectorFanclub.png',
                             color: currentTab == 2
-                                ? Colors.purple
+                                ? Color(0xff965bf5)
                                 : Colors.black)),
                     MaterialButton(
                         minWidth: 60,
@@ -113,7 +113,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
                         },
                         child: Image.asset('assets/userprofile.png',
                             color: currentTab == 3
-                                ? Colors.purple
+                                ? Color(0xff965bf5)
                                 : Colors.black)),
                   ])),
         ),

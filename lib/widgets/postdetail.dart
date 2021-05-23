@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-Widget postdetail(context) {
+Widget postdetail(context, bgimage, dpimage) {
   return Container(
       decoration:
           BoxDecoration(borderRadius: BorderRadius.all(Radius.circular(20))),
@@ -13,7 +13,7 @@ Widget postdetail(context) {
               borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(20), topRight: Radius.circular(20)),
               image: DecorationImage(
-                image: AssetImage("assets/back.jpg"),
+                image: AssetImage(bgimage),
                 fit: BoxFit.cover,
               ),
             ),
@@ -37,11 +37,7 @@ Widget postdetail(context) {
                     Row(
                       children: [
                         Container(
-                          child: CircleAvatar(
-                            radius: 12.0,
-                            backgroundColor: Colors.purple,
-                          ),
-                        ),
+                            height: 25, width: 25, child: Image.asset(dpimage)),
                         SizedBox(width: 5),
                         Text(
                           '@portugral',

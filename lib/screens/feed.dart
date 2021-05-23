@@ -23,11 +23,9 @@ class _Feed2State extends State<Feed2> {
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     Container(
-                      child: CircleAvatar(
-                        radius: 40.0,
-                        backgroundColor: Colors.purple,
-                      ),
-                    ),
+                        height: 90,
+                        width: 90,
+                        child: Image.asset("assets/dp.png")),
                     SizedBox(width: 5),
                     Column(
                       mainAxisAlignment: MainAxisAlignment.end,
@@ -114,7 +112,7 @@ class _Feed2State extends State<Feed2> {
               Text(
                 "@portugal",
                 style: TextStyle(
-                  color: Colors.purple,
+                  color: Color(0xff965bf5),
                   fontSize: 16,
                 ),
               ),
@@ -168,8 +166,8 @@ class _Feed2State extends State<Feed2> {
               SizedBox(
                 height: MediaQuery.of(context).size.height * 0.02,
               ),
-              postdetail(context),
-              postdetail(context),
+              postdetail(context, "assets/1.png", "assets/dp.png"),
+              postdetail(context, "assets/2nd.png", "assets/dp.png"),
             ]),
           ),
         ),

@@ -78,14 +78,14 @@ class _BottomNav2State extends State<BottomNav2> {
                         children: [
                           Image.asset('assets/feed.png',
                               color: currentTab == 0
-                                  ? Colors.purple
+                                  ? Color(0xff965bf5)
                                   : Colors.black),
                           Text(
                             'Feed',
                             style: TextStyle(
                                 fontSize: 12,
                                 color: currentTab == 0
-                                    ? Colors.purple
+                                    ? Color(0xff965bf5)
                                     : Colors.black),
                           )
                         ],
@@ -110,14 +110,14 @@ class _BottomNav2State extends State<BottomNav2> {
                         children: [
                           Image.asset('assets/Vectorcollection.png',
                               color: currentTab == 1
-                                  ? Colors.purple
+                                  ? Color(0xff965bf5)
                                   : Colors.black),
                           Text(
                             'Collection',
                             style: TextStyle(
                                 fontSize: 12,
                                 color: currentTab == 1
-                                    ? Colors.purple
+                                    ? Color(0xff965bf5)
                                     : Colors.black),
                           )
                         ],
@@ -142,14 +142,14 @@ class _BottomNav2State extends State<BottomNav2> {
                         children: [
                           Image.asset('assets/VectorFanclub.png',
                               color: currentTab == 2
-                                  ? Colors.purple
+                                  ? Color(0xff965bf5)
                                   : Colors.black),
                           Text(
                             'Fan Club',
                             style: TextStyle(
                                 fontSize: 12,
                                 color: currentTab == 2
-                                    ? Colors.purple
+                                    ? Color(0xff965bf5)
                                     : Colors.black),
                           )
                         ],
@@ -174,14 +174,14 @@ class _BottomNav2State extends State<BottomNav2> {
                         children: [
                           Image.asset('assets/Vectorfavourite.png',
                               color: currentTab == 3
-                                  ? Colors.purple
+                                  ? Color(0xff965bf5)
                                   : Colors.black),
                           Text(
                             'Likes',
                             style: TextStyle(
                                 fontSize: 12,
                                 color: currentTab == 3
-                                    ? Colors.purple
+                                    ? Color(0xff965bf5)
                                     : Colors.black),
                           )
                         ],
