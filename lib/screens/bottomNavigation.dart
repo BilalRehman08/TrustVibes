@@ -84,7 +84,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
                             currentTab = 1;
                           });
                         },
-                        child: Icon(Icons.favorite,
+                        child: Icon(Icons.circle_outlined,
                             size: 32,
                             color:
                                 currentTab == 1 ? Colors.purple : Colors.black),
@@ -100,7 +100,7 @@ class _BottomNavigationState extends State<BottomNavigation> {
                             currentTab = 2;
                           });
                         },
-                        child: Icon(Icons.add_shopping_cart,
+                        child: Icon(Icons.design_services,
                             size: 32,
                             color:
                                 currentTab == 2 ? Colors.purple : Colors.black),

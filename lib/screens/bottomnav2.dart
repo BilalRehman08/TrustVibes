@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:trustvibes/screens/details.dart';
+
 import 'package:trustvibes/screens/feeds.dart';
 import 'package:trustvibes/screens/screen3.dart';
 import 'package:trustvibes/screens/screen4.dart';
@@ -22,7 +22,7 @@ class _BottomNav2State extends State<BottomNav2> {
     Screen5(),
   ];
 
-  Widget currentScreen = Details();
+  Widget currentScreen = Feed2();
 
   final PageStorageBucket bucket = PageStorageBucket();
 

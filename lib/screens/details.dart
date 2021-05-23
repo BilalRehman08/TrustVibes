@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:trustvibes/screens/bottomNavigation.dart';
+import 'package:trustvibes/screens/bottomnav2.dart';
+
+import 'feed2.dart';
 
 class Details extends StatefulWidget {
   @override
@@ -194,7 +198,12 @@ class _DetailsState extends State<Details> {
                     Row(
                       children: [
                         TextButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => BottomNav2()));
+                          },
                           child: Text(
                             "Feed",
                             style: TextStyle(
@@ -204,7 +213,10 @@ class _DetailsState extends State<Details> {
                           ),
                         ),
                         TextButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            // Navigator.push(context,
+                            //     MaterialPageRoute(builder: (context) => MyApp()));
+                          },
                           child: Text(
                             "Info",
                             style: TextStyle(
